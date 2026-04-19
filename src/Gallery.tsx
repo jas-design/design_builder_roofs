@@ -20,35 +20,35 @@ const PROJECTS = [
     category: 'Commercial',
     title: 'Warehouse TPO Restoration',
     location: 'Orlando, FL',
-    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1635424709961-f3a150459ad4?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 3,
     category: 'Repair',
     title: 'Emergency Storm Repair',
     location: 'Tampa, FL',
-    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1643509867448-57001e0c333d?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 4,
     category: 'Residential',
     title: 'Spanish Tile Excellence',
     location: 'Coral Gables, FL',
-    image: 'https://images.unsplash.com/photo-1508333706533-1ec43ecb391d?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1673645652590-9d21295bf4ac?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 5,
     category: 'Residential',
     title: 'Traditional Slate Finish',
     location: 'Naples, FL',
-    image: 'https://images.unsplash.com/photo-1505672678657-cc7037095e60?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 6,
     category: 'Commercial',
     title: 'Retail Center Metal Roof',
     location: 'Fort Lauderdale, FL',
-    image: 'https://images.unsplash.com/photo-1510113645371-d8ec88b907c1?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1657262585548-b12220e644f0?auto=format&fit=crop&q=80&w=1200'
   }
 ];
 
