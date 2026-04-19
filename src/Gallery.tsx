@@ -66,7 +66,7 @@ export default function Gallery() {
       <section className="bg-primary py-32 px-4 text-white relative overflow-hidden text-center md:text-left">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
            <img 
-              src="https://images.unsplash.com/photo-1628178652422-9449852079f8?auto=format&fit=crop&q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=2000" 
               className="w-full h-full object-cover" 
               referrerPolicy="no-referrer"
            />

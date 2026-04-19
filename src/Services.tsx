@@ -16,7 +16,7 @@ const SERVICES_DETAILED = [
     tag: 'REPAIR SERVICE',
     description: 'Stop leaks before they destroy your interior. We handle everything from single shingle replacement to major structural repairs.',
     points: ['Leak detection and source identification', 'Minor & major structural repairs', 'Fascia and soffit repair', 'Gutter cleaning and repair'],
-    image: 'https://images.unsplash.com/photo-1664132890538-4e83a483e5fa?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'replacement',
@@ -54,7 +54,7 @@ export default function Services() {
       <section className="bg-primary py-32 px-4 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
            <img 
-              src="https://images.unsplash.com/photo-1508333706533-1ec43ecb391d?auto=format&fit=crop&q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=2000" 
               className="w-full h-full object-cover" 
               referrerPolicy="no-referrer"
            />

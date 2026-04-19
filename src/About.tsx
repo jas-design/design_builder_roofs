@@ -13,7 +13,7 @@ export default function About() {
       <section className="bg-primary py-32 px-4 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
            <img 
-              src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=2000" 
               className="w-full h-full object-cover" 
               referrerPolicy="no-referrer"
            />
@@ -41,7 +41,7 @@ export default function About() {
           <div className="lg:w-1/2 relative">
              <div className="relative z-10">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200" 
+                  src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=1200" 
                   className="rounded-sm shadow-2xl skew-slant" 
                   alt="Roofing Team"
                   referrerPolicy="no-referrer"

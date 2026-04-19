@@ -44,7 +44,7 @@ const SERVICE_TABS = [
     name: 'Roof Renovation', 
     title: 'Comprehensive Roof Renovation',
     description: 'Breathe new life into your existing roof with our expert renovation services, extending its lifespan and improving curb appeal.',
-    image: 'https://images.unsplash.com/photo-1449156001931-859bbbad1e31?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=800',
     features: ["Structural Assessment", "Gutter Maintenance", "Surface Restoration"]
   }
 ];
@@ -145,7 +145,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
           <div className="lg:w-1/2 relative">
             <div className="relative">
-              <img src="https://images.unsplash.com/photo-1542665952-13203aad399b?auto=format&fit=crop&q=80&w=800" className="rounded-sm shadow-2xl skew-slant" referrerPolicy="no-referrer" />
+              <img src="https://images.unsplash.com/photo-1508333706533-1ec43ecb391d?auto=format&fit=crop&q=80&w=800" className="rounded-sm shadow-2xl skew-slant" referrerPolicy="no-referrer" />
               <div className="absolute -bottom-8 -left-8 bg-secondary p-8 text-white shadow-2xl skew-slant">
                 <p className="text-4xl font-black">10+</p>
                 <p className="text-[10px] font-bold uppercase tracking-widest leading-none">World Best Roofing<br />Winner List</p>

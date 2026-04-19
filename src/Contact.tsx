@@ -26,7 +26,7 @@ export default function Contact() {
       <section className="bg-primary py-32 px-4 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
            <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2000" 
+              src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=2000" 
               className="w-full h-full object-cover" 
               referrerPolicy="no-referrer"
            />
