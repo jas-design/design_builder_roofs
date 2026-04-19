@@ -16,7 +16,7 @@ const SERVICES_DETAILED = [
     tag: 'REPAIR SERVICE',
     description: 'Stop leaks before they destroy your interior. We handle everything from single shingle replacement to major structural repairs.',
     points: ['Leak detection and source identification', 'Minor & major structural repairs', 'Fascia and soffit repair', 'Gutter cleaning and repair'],
-    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1664132890538-4e83a483e5fa?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'replacement',
