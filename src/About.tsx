@@ -41,7 +41,7 @@ export default function About() {
           <div className="lg:w-1/2 relative">
              <div className="relative z-10">
                 <img 
-                  src="https://images.unsplash.com//uma-pessoa-usando-uma-broca-para-perfurar-um-pedaco-de-madeira-dDluNWaVQWA?auto=format&fit=crop&q=80&w=1200" 
+                  src="https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?auto=format&fit=crop&q=80&w=1200" 
                   className="rounded-sm shadow-2xl skew-slant" 
                   alt="Roofing Team"
                   referrerPolicy="no-referrer"
