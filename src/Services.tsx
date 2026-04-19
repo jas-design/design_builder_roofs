@@ -16,7 +16,7 @@ const SERVICES_DETAILED = [
     tag: 'REPAIR SERVICE',
     description: 'Stop leaks before they destroy your interior. We handle everything from single shingle replacement to major structural repairs.',
     points: ['Leak detection and source identification', 'Minor & major structural repairs', 'Fascia and soffit repair', 'Gutter cleaning and repair'],
-    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'replacement',
@@ -34,7 +34,7 @@ const SERVICES_DETAILED = [
     tag: 'MAINTENANCE',
     description: 'Knowledge is power. Our thorough inspections give you a complete picture of your roof\'s health and estimated lifespan.',
     points: ['Post-storm damage assessments', 'Pre-purchase real estate inspections', 'Insurance certification (4-Point/Wind Mit)', 'Annual maintenance checkups'],
-    image: 'https://images.unsplash.com/photo-1449156001437-3a16d1dfbc7a?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1673645652590-9d21295bf4ac?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'storm',
@@ -43,7 +43,7 @@ const SERVICES_DETAILED = [
     tag: 'RESTORATION',
     description: 'Florida weather is unpredictable. We specialize in fast recovery and direct insurance coordination after wind and hail events.',
     points: ['Emergency tarping and secauration', 'Hail damage identification', 'Insurance claim documentation', 'Complete storm restoration'],
-    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1633759593085-1eaeb724fc88?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
