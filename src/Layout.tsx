@@ -225,11 +225,11 @@ export default function Layout({ children }: { children: ReactNode }) {
               <div className="grid grid-cols-3 gap-2">
                  {[
                    '1635424710928-0544e8512eae',
-                   '1632759162125-f0ea775c7471',
-                   '1510113645371-d8ec88b907c1',
-                   '1508333706533-1ec43ecb391d',
-                   '1620608535234-a69492160671',
-                   '1621259182978-fbf93132d53d'
+                   '1635424710928-0544e8512eae',
+                   '1673645652590-9d21295bf4ac',
+                   '1633759593085-1eaeb724fc88',
+                   '1643509867448-57001e0c333d',
+                   '1635424709961-f3a150459ad4'
                  ].map((id, i) => (
                     <div key={i} className="aspect-square bg-slate-800 rounded-sm overflow-hidden group">
                        <img 
