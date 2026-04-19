@@ -23,7 +23,7 @@ const SERVICE_TABS = [
     name: 'Modified Roofing', 
     title: 'Modified Roofing Systems',
     description: 'Our modified roofing solutions provide superior durability and weather resistance, specifically designed for the South Florida climate.',
-    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1643509963821-563d2ddb0812?auto=format&fit=crop&q=80&w=800',
     features: ["UV Resistant Coating", "Triple-Layer Protection", "Energy Efficient Options"]
   },
   { 
@@ -37,7 +37,7 @@ const SERVICE_TABS = [
     name: 'Roof Cornering', 
     title: 'Expert Roof Cornering',
     description: 'Detailed cornering and flashing work to prevent leaks at the most vulnerable points of your roofing system.',
-    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1643509963821-563d2ddb0812?auto=format&fit=crop&q=80&w=800',
     features: ["Custom Flashing", "Impact Reinforcement", "Seamless Integration"]
   },
   { 
