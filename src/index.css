@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+@theme {
+  --color-primary: #151a2d; /* Dark Navy from image */
+  --color-secondary: #e32828; /* Bold Red from image */
+  --color-secondary-hover: #c21d1d;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Plus Jakarta Sans", "Inter", sans-serif; /* Cleaner display font for headings */
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-800 bg-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight font-bold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .skew-slant {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  }
+  .bg-grid-white {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
