@@ -65,13 +65,21 @@ export default function Layout({ children }: { children: ReactNode }) {
         )}
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-secondary flex items-center justify-center rounded-sm">
-               <Hammer size={24} className="text-white" />
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="flex items-center">
+              <div className="relative w-12 h-12 bg-[#2B3A93] flex items-center justify-center overflow-hidden border-2 border-[#CE502A]">
+                 {/* Diagonal Lines */}
+                 <div className="absolute inset-0 flex items-center justify-center opacity-30">
+                    <div className="w-[150%] h-0.5 bg-white -rotate-45" />
+                 </div>
+                 <span className="text-2xl font-black text-[#CE502A] italic tracking-tighter relative z-10 select-none" style={{ textShadow: '1px 1px 0px white' }}>dbr</span>
+              </div>
+              <div className="ml-3 flex flex-col leading-none">
+                <span className="text-xl font-black tracking-tighter text-white group-hover:text-secondary transition-colors uppercase">Design</span>
+                <span className="text-xl font-black tracking-tighter text-white group-hover:text-secondary transition-colors uppercase">Builder</span>
+                <span className="text-xl font-black tracking-tighter text-secondary uppercase">Roofs</span>
+              </div>
             </div>
-            <span className="text-2xl font-black tracking-tighter text-white leading-none">
-              DESIGN<span className="text-secondary">BUILDER</span>
-            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -163,13 +171,20 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div className="space-y-6">
-              <Link to="/" className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-secondary flex items-center justify-center rounded-sm">
-                   <Hammer size={24} className="text-white" />
+              <Link to="/" className="flex items-center gap-3 group">
+                <div className="flex items-center">
+                  <div className="relative w-10 h-10 bg-[#2B3A93] flex items-center justify-center overflow-hidden border-2 border-[#CE502A]">
+                     <div className="absolute inset-0 flex items-center justify-center opacity-30">
+                        <div className="w-[150%] h-0.5 bg-white -rotate-45" />
+                     </div>
+                     <span className="text-xl font-black text-[#CE502A] italic tracking-tighter relative z-10 select-none" style={{ textShadow: '1px 1px 0px white' }}>dbr</span>
+                  </div>
+                  <div className="ml-3 flex flex-col leading-none">
+                    <span className="text-lg font-black tracking-tighter text-white uppercase transition-colors group-hover:text-secondary">Design</span>
+                    <span className="text-lg font-black tracking-tighter text-white uppercase transition-colors group-hover:text-secondary">Builder</span>
+                    <span className="text-lg font-black tracking-tighter text-secondary uppercase">Roofs</span>
+                  </div>
                 </div>
-                <span className="text-2xl font-black tracking-tighter text-white leading-none">
-                  DESIGN<span className="text-secondary">BUILDER</span>
-                </span>
               </Link>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia malesuada ornare is sodales consequat curabitur lacinia mollis.

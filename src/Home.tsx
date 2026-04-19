@@ -18,8 +18,40 @@ const HERO_SLIDES = [
   }
 ];
 
+const SERVICE_TABS = [
+  { 
+    name: 'Modified Roofing', 
+    title: 'Modified Roofing Systems',
+    description: 'Our modified roofing solutions provide superior durability and weather resistance, specifically designed for the South Florida climate.',
+    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=800',
+    features: ["UV Resistant Coating", "Triple-Layer Protection", "Energy Efficient Options"]
+  },
+  { 
+    name: 'Roof Installation', 
+    title: 'Professional Roof Installation',
+    description: 'Full roof installation services for residential properties. We use only Miami-Dade approved materials and follow strict safety protocols.',
+    image: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=800',
+    features: ["Precision Workmanship", "Complete Site Cleanup", "Manufacturer Warranties"]
+  },
+  { 
+    name: 'Roof Cornering', 
+    title: 'Expert Roof Cornering',
+    description: 'Detailed cornering and flashing work to prevent leaks at the most vulnerable points of your roofing system.',
+    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=800',
+    features: ["Custom Flashing", "Impact Reinforcement", "Seamless Integration"]
+  },
+  { 
+    name: 'Roof Renovation', 
+    title: 'Comprehensive Roof Renovation',
+    description: 'Breathe new life into your existing roof with our expert renovation services, extending its lifespan and improving curb appeal.',
+    image: 'https://images.unsplash.com/photo-1449156001931-859bbbad1e31?auto=format&fit=crop&q=80&w=800',
+    features: ["Structural Assessment", "Gutter Maintenance", "Surface Restoration"]
+  }
+];
+
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div className="flex flex-col bg-white">
@@ -177,21 +209,17 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="space-y-2">
-              {[
-                { name: 'Modified Roofing', active: true },
-                { name: 'Roof Installation', active: false },
-                { name: 'Roof Cornering', active: false },
-                { name: 'Roof Renovation', active: false },
-              ].map((item, i) => (
+              {SERVICE_TABS.map((item, i) => (
                 <button 
                   key={i} 
+                  onClick={() => setActiveTab(i)}
                   className={cn(
                     "w-full px-8 py-6 flex justify-between items-center text-left font-black uppercase tracking-widest text-sm transition-all shadow-sm",
-                    item.active ? "bg-secondary text-white skew-slant scale-105" : "bg-white text-primary border border-slate-100 hover:bg-slate-50"
+                    activeTab === i ? "bg-secondary text-white skew-slant scale-105" : "bg-white text-primary border border-slate-100 hover:bg-slate-50"
                   )}
                 >
                   <div className="flex items-center gap-4">
-                     {item.active ? <Hammer size={20} /> : <div className="w-5 h-5 border-2 border-primary/20 rounded-full" />}
+                     {activeTab === i ? <Hammer size={20} /> : <div className="w-5 h-5 border-2 border-primary/20 rounded-full" />}
                      {item.name}
                   </div>
                   <ChevronRight />
@@ -199,23 +227,42 @@ export default function Home() {
               ))}
             </div>
             <div className="lg:col-span-2 bg-white p-12 rounded-sm shadow-xl flex flex-col md:flex-row gap-12 items-center">
-              <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=600" className="md:w-1/2 rounded-sm h-full object-cover" referrerPolicy="no-referrer" />
-              <div className="md:w-1/2 space-y-6">
-                <h3 className="text-2xl font-black text-primary uppercase">Modified Roofing</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">
-                  It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point of using lorem.
-                </p>
-                <div className="space-y-3">
-                   {["Accurate Testing Processes", "100% Satisfaction Guarantee", "Award Winning Company"].map((text, i) => (
-                      <div key={i} className="flex items-center gap-2 text-[10px] font-bold text-primary">
-                        <CheckCircle2 size={12} className="text-secondary" /> {text}
-                      </div>
-                   ))}
-                </div>
-                <button className="bg-secondary text-white px-10 py-5 text-[10px] font-bold uppercase tracking-widest skew-slant">
-                  READ MORE | →
-                </button>
-              </div>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeTab}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex flex-col md:flex-row gap-12 items-center"
+                >
+                  <img 
+                    src={SERVICE_TABS[activeTab].image} 
+                    alt={SERVICE_TABS[activeTab].title}
+                    className="md:w-1/2 rounded-sm h-[300px] object-cover" 
+                    referrerPolicy="no-referrer" 
+                  />
+                  <div className="md:w-1/2 space-y-6">
+                    <h3 className="text-2xl font-black text-primary uppercase">{SERVICE_TABS[activeTab].title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed">
+                      {SERVICE_TABS[activeTab].description}
+                    </p>
+                    <div className="space-y-3">
+                       {SERVICE_TABS[activeTab].features.map((text, i) => (
+                          <div key={i} className="flex items-center gap-2 text-[10px] font-bold text-primary">
+                            <CheckCircle2 size={12} className="text-secondary" /> {text}
+                          </div>
+                       ))}
+                    </div>
+                    <Link 
+                      to="/services" 
+                      className="inline-block bg-secondary text-white px-10 py-5 text-[10px] font-bold uppercase tracking-widest skew-slant hover:bg-secondary-hover transition-colors"
+                    >
+                      READ MORE | →
+                    </Link>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
         </div>
