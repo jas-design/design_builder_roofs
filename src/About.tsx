@@ -84,7 +84,11 @@ export default function About() {
             <div className="pt-4 border-t border-slate-100 flex flex-wrap gap-10 items-center">
                <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full border-2 border-secondary p-1">
-                     <img src="https://i.pravatar.cc/100?u=ceo" className="w-full h-full rounded-full object-cover" />
+                     <img 
+                       src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150" 
+                       className="w-full h-full rounded-full object-cover" 
+                       referrerPolicy="no-referrer"
+                     />
                   </div>
                   <div>
                      <p className="font-black text-primary leading-none uppercase">Robert Miller</p>
@@ -135,10 +139,10 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: 'Robert Miller', role: 'CEO & Founder', image: 'https://i.pravatar.cc/400?u=1' },
-              { name: 'Elena Rodriguez', role: 'Operations', image: 'https://i.pravatar.cc/400?u=2' },
-              { name: 'Mark Peterson', role: 'Head Inspector', image: 'https://i.pravatar.cc/400?u=3' },
-              { name: 'Kathryn Murphy', role: 'Engineer', image: 'https://i.pravatar.cc/400?u=4' },
+              { name: 'Robert Miller', role: 'CEO & Founder', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400' },
+              { name: 'Elena Rodriguez', role: 'Operations', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400' },
+              { name: 'Mark Peterson', role: 'Head Inspector', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400' },
+              { name: 'Kathryn Murphy', role: 'Engineer', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400' },
             ].map((member, i) => (
               <div key={i} className="group overflow-hidden">
                 <div className="aspect-[3/4] overflow-hidden relative skew-slant mb-6">

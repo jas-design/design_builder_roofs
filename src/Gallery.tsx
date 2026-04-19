@@ -13,21 +13,21 @@ const PROJECTS = [
     category: 'Residential',
     title: 'Modern Shingle Install',
     location: 'Miami, FL',
-    image: 'https://images.unsplash.com/photo-1628178652422-9449852079f8?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 2,
     category: 'Commercial',
     title: 'Warehouse TPO Restoration',
     location: 'Orlando, FL',
-    image: 'https://images.unsplash.com/photo-1449156001437-3a16d1dfbc7a?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 3,
     category: 'Repair',
     title: 'Emergency Storm Repair',
     location: 'Tampa, FL',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=1200'
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const PROJECTS = [
     category: 'Commercial',
     title: 'Retail Center Metal Roof',
     location: 'Fort Lauderdale, FL',
-    image: 'https://images.unsplash.com/photo-1449156001437-3a16d1dfbc7a?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1510113645371-d8ec88b907c1?auto=format&fit=crop&q=80&w=1200'
   }
 ];
 
@@ -245,8 +245,16 @@ export default function Gallery() {
                </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-               <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=600" className="skew-slant shadow-2xl border-4 border-white" referrerPolicy="no-referrer" />
-               <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=600" className="skew-slant shadow-2xl border-4 border-white pt-12" referrerPolicy="no-referrer" />
+               <img 
+                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600" 
+                 className="skew-slant shadow-2xl border-4 border-white object-cover aspect-video" 
+                 referrerPolicy="no-referrer" 
+               />
+               <img 
+                 src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=600" 
+                 className="skew-slant shadow-2xl border-4 border-white pt-12 object-cover aspect-video" 
+                 referrerPolicy="no-referrer" 
+               />
             </div>
          </div>
       </section>

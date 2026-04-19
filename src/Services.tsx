@@ -34,7 +34,7 @@ const SERVICES_DETAILED = [
     tag: 'MAINTENANCE',
     description: 'Knowledge is power. Our thorough inspections give you a complete picture of your roof\'s health and estimated lifespan.',
     points: ['Post-storm damage assessments', 'Pre-purchase real estate inspections', 'Insurance certification (4-Point/Wind Mit)', 'Annual maintenance checkups'],
-    image: 'https://images.unsplash.com/photo-1510113645371-d8ec88b907c1?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1449156001437-3a16d1dfbc7a?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'storm',
@@ -43,7 +43,7 @@ const SERVICES_DETAILED = [
     tag: 'RESTORATION',
     description: 'Florida weather is unpredictable. We specialize in fast recovery and direct insurance coordination after wind and hail events.',
     points: ['Emergency tarping and secauration', 'Hail damage identification', 'Insurance claim documentation', 'Complete storm restoration'],
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&q=80&w=800'
   }
 ];
 

@@ -223,10 +223,17 @@ export default function Layout({ children }: { children: ReactNode }) {
             <div>
               <h4 className="font-bold text-lg mb-8 uppercase tracking-widest border-l-4 border-secondary pl-4">Our Gallery</h4>
               <div className="grid grid-cols-3 gap-2">
-                 {[1,2,3,4,5,6].map(i => (
+                 {[
+                   '1635424710928-0544e8512eae',
+                   '1632759162125-f0ea775c7471',
+                   '1510113645371-d8ec88b907c1',
+                   '1508333706533-1ec43ecb391d',
+                   '1620608535234-a69492160671',
+                   '1621259182978-fbf93132d53d'
+                 ].map((id, i) => (
                     <div key={i} className="aspect-square bg-slate-800 rounded-sm overflow-hidden group">
                        <img 
-                          src={`https://picsum.photos/seed/roof${i}/200/200`} 
+                          src={`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&q=80&w=200`} 
                           alt="Gallery" 
                           className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500"
                           referrerPolicy="no-referrer"

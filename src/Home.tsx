@@ -91,7 +91,12 @@ export default function Home() {
               </Link>
               <div className="flex -space-x-2">
                  {[1,2,3].map(i => (
-                    <img key={i} src={`https://i.pravatar.cc/100?u=${i}`} className="w-10 h-10 rounded-full border-2 border-primary" />
+                    <img 
+                      key={i} 
+                      src={`https://images.unsplash.com/photo-${i === 1 ? '1534528741775-53994a69daeb' : i === 2 ? '1507003211169-0a1dd7228f2d' : '1500648767791-00dcc994a43e'}?auto=format&fit=crop&q=80&w=100`} 
+                      className="w-10 h-10 rounded-full border-2 border-primary object-cover" 
+                      referrerPolicy="no-referrer"
+                    />
                  ))}
                  <div className="pl-4">
                     <p className="text-white font-bold text-sm">Satisfied Clients</p>
@@ -331,7 +336,11 @@ export default function Home() {
                    "It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point of using lorem the is ipsum less normal distribution of letters."
                  </p>
                  <div className="flex items-center gap-6">
-                    <img src="https://i.pravatar.cc/150?u=9" className="w-16 h-16 rounded-full grayscale" />
+                    <img 
+                       src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150" 
+                       className="w-16 h-16 rounded-full grayscale object-cover" 
+                       referrerPolicy="no-referrer"
+                     />
                     <div>
                        <h4 className="font-black text-primary text-lg uppercase tracking-tight leading-none mb-1">Kathryn Murphy</h4>
                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Engineering</p>
@@ -354,7 +363,11 @@ export default function Home() {
       {/* Quick Help Call */}
       <section className="py-24 bg-primary px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-           <img src="https://images.unsplash.com/photo-1449156001437-3a16d1dfbc7a?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover" />
+           <img 
+             src="https://images.unsplash.com/photo-1632759162125-f0ea775c7471?auto=format&fit=crop&q=80&w=2000" 
+             className="w-full h-full object-cover" 
+             referrerPolicy="no-referrer"
+           />
         </div>
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-10 relative z-10">
           <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter">Need Any Roofing Help?</h2>
